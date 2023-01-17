@@ -387,6 +387,15 @@
                         </li>
                     </ul>
                 </div>
+                <div class="footer-subscribe">
+                    <form action="">
+                        <label name="" value="" class="footer-subscribe-title">Subscribe</label>
+                        <div class="footer-subscribe-wrapper">
+                            <input type="email" class="footer-subscribe-input" placeholder="E-mail">
+                            <button class="footer-subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -394,11 +403,46 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="modal-btn-close"  data-modal-close>
+        <button type="button" class="modal-btn-close" data-modal-close>
             <svg class="modal-close-svg" width="8px" height="8px">
                 <use class="modal-close-use" href="./images/close-modal.svg#icon-close-black-modal"></use>
             </svg>
         </button>
+        <div class="modal-container ">
+            <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+            <form class="modal-form">
+
+                <label class="modal-form-label">Name </label>
+                <input type="name" name="name"
+                       placeholder=""
+                       required="" class="modal-form-input">
+
+                <label class="modal-form-label">Phone</label>
+                <input type="tel" name="tel"
+                       placeholder="" required=""
+                       class="modal-form-input">
+
+                <label class="modal-form-label">Email</label>
+                <input type="email" name="email"
+                       placeholder=""
+                       required="" class="modal-form-input">
+
+                <label class="modal-form-label" for="message">Comment</label>
+                <textarea class="modal-form-textarea"
+                          id="message" name="Message-Field"
+                          maxlength="1000"
+                          data-name="Message Field" placeholder="Text input">
+                </textarea>
+
+                <input type="checkbox" class="modal-form-label">
+                <label name="" value="">
+                    I accept the terms and conditions of the <a href="">Privacy Policy</a>
+                </label>
+                <button
+                        class="modal-form-btn">Send
+                </button>
+            </form>
+        </div>
     </div>
 </div>
 
