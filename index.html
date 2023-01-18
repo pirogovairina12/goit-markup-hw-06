@@ -391,7 +391,7 @@
                     <form action="">
                         <label name="" value="" class="footer-subscribe-title">Subscribe</label>
                         <div class="footer-subscribe-wrapper">
-                            <input type="email"name="email"  class="footer-subscribe-input" placeholder="E-mail">
+                            <input type="email" name="email" class="footer-subscribe-input" placeholder="E-mail">
                             <button class="footer-subscribe-btn">Subscribe</button>
                         </div>
                     </form>
@@ -411,36 +411,55 @@
         <div class="modal-container ">
             <h3 class="modal-title">Leave your contacts and we will call you back</h3>
             <form class="modal-form">
-
-                <label class="modal-form-label">Name </label>
-                <input type="name" name="name"
-                       placeholder=""
-                       required="" class="modal-form-input">
-
-                <label class="modal-form-label">Phone</label>
-                <input type="tel" name="tel"
-                       placeholder="" required=""
-                       class="modal-form-input">
-
-                <label class="modal-form-label">Email</label>
-                <input type="email" name="email"
-                       placeholder=""
-                       required="" class="modal-form-input">
-
-                <label class="modal-form-label" for="message">Comment</label>
-                <textarea class="modal-form-textarea"
-                          id="message" name="Message-Field"
-                          maxlength="1000"
-                          data-name="Message Field" placeholder="Text input">
-                </textarea>
-
-                <input type="checkbox" class="modal-form-label">
-                <label name="" value="">
-                    I accept the terms and conditions of the <a href="">Privacy Policy</a>
-                </label>
-                <button
-                        class="modal-form-btn">Send
-                </button>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label">Name </label>
+                    <input type="name" name="name"
+                           placeholder=""
+                           required="" class="modal-form-input">
+                    <div class="modal-icon-svg-wrap">
+                        <svg class="modal-icon-svg" width="18px" height="24px">
+                            <use class="modal-icon-use" href="./images/modal-icon.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label">Phone</label>
+                    <input type="tel" name="tel"
+                           placeholder="" required=""
+                           class="modal-form-input">
+                    <div class="modal-icon-svg-wrap">
+                        <svg class="modal-icon-svg" width="18px" height="24px">
+                            <use class="modal-icon-use" href="./images/modal-icon.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label">Email</label>
+                    <input type="email" name="email"
+                           placeholder=""
+                           required="" class="modal-form-input">
+                    <div class="modal-icon-svg-wrap">
+                        <svg class="modal-icon-svg" width="18px" height="24px">
+                            <use class="modal-icon-use" href="./images/modal-icon.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" >Comment</label>
+                    <textarea class="modal-form-textarea" placeholder="Text input" name="user-message"></textarea>
+                </div>
+                <div class="modal-form-bottom">
+                    <div class="modal-form-privacy-policy">
+                        <input type="checkbox" name="user-policy" class="modal-form-checkbox">
+                        <label name="user-policy" value="" class="modal-form-privacy-policy-label">
+                            I accept the terms and conditions of the <a href="" class="modal-form-privacy-policy-link">Privacy
+                            Policy</a>
+                        </label>
+                    </div>
+                    <button
+                            class="modal-form-btn" type="submit">Send
+                    </button>
+                </div>
             </form>
         </div>
     </div>
