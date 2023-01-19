@@ -814,7 +814,6 @@ form.modal-form {
     background: var(--btn-color);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: var(--btn-color);
     padding: 16px 32px;
     width: 169px;
     height: 56px;
@@ -829,7 +828,9 @@ form.modal-form {
     display: flex;
     justify-content: space-around;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
 }
+
 .modal-form-btn:hover {
     background-color: var(--btn-hover-color);
 }
@@ -918,10 +919,6 @@ form.modal-form {
     height: 16px;
 }
 
-.modal-form-privacy-policy-label {
-    padding: 0 0 0 8px;
-}
-
 .modal-form-input:focus {
     outline: none;
     border-color: #4d5ae5;
@@ -938,13 +935,13 @@ form.modal-form {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus ~ .modal-icon-svg-wrap >.modal-icon-svg {
+.modal-form-input:focus ~ .modal-icon-svg-wrap > .modal-icon-svg {
     fill: #404BBF;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.modal-form-textarea::placeholder{
+.modal-form-textarea::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -952,8 +949,8 @@ form.modal-form {
     color: rgba(117, 117, 117, 0.5);
 }
 
-input.modal-form-input{
-    background-color:   #FCFCFC;
+input.modal-form-input {
+    background-color: #FCFCFC;
     position: relative;
 }
 
@@ -964,7 +961,7 @@ svg.modal-icon-svg {
     bottom: 7px;
     width: 18px;
     height: 24px;
-    fill:  #2E2F42;
+    fill: #2E2F42;
 }
 
 .modal-icon-svg-wrap {
@@ -972,8 +969,7 @@ svg.modal-icon-svg {
 }
 
 
-
-.modal-form-checkbox::before {
+.modal-form-checkbox::after {
     content: "";
     display: block;
     width: 16px;
@@ -984,10 +980,30 @@ svg.modal-icon-svg {
     margin-right: 8px;
 }
 
-.modal-form-checkbox:checked + .modal-form-privacy-policy-label::before {
-    background-color: #F4F4FD;
+
+.modal-form-checkbox {
+    margin: 0 8px 0 0;
+}
+
+.modal-form-checkbox:checked + .icon-modal {
+    background-color: #404BBF;
     background-image: url(../images/click-modal.svg);
     background-repeat: no-repeat;
     background-position: center;
-    fill: #F4F4FD;
+    background-size: contain;
+    opacity: 1;
+}
+
+.icon-modal {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.modal-form-privacy-policy-label {
+    display: flex;
+    align-items: center;
 }
