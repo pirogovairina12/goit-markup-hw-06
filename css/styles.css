@@ -596,7 +596,14 @@ section.portfolio {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+}
+
+.footer-description {
+    margin-right: 120px;
+}
+
+.footer-subscribe {
+    margin-left: auto;
 }
 
 .footer-social-list {
@@ -713,12 +720,11 @@ section.portfolio {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    padding: 24px;
+    padding: 72px 24px 24px;
     background-color: #FCFCFC;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12), 0 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     width: 408px;
-    height: 576px;
 }
 
 .modal-btn-close {
@@ -727,9 +733,14 @@ section.portfolio {
     border-radius: 50%;
     cursor: pointer;
     right: 24px;
+    top: 24px;
     position: absolute;
-    padding: 8px;
     display: flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 24px;
+    height: 24px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .modal-btn-close:hover {
@@ -775,7 +786,7 @@ li.portfolio-item:hover {
     line-height: 24px;
     text-align: center;
     color: var(--hero-bg-color);
-    padding: 48px 0 16px 0;
+    margin: 0 0 16px 0;
 }
 
 .modal-form-label {
@@ -783,7 +794,8 @@ li.portfolio-item:hover {
     font-size: 12px;
     line-height: 16px;
     color: #8E8F99;
-    padding: 0 0 4px 0;
+    margin-bottom: 4px;
+    display: block;
 }
 
 .modal-form-input {
@@ -793,11 +805,6 @@ li.portfolio-item:hover {
     border-radius: 4px;
 }
 
-form.modal-form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
 
 .modal-form-textarea {
     width: 360px;
@@ -821,12 +828,10 @@ form.modal-form {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    align-items: center;
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
-    display: flex;
-    justify-content: space-around;
+    display: block;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
 }
@@ -840,7 +845,8 @@ form.modal-form {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-    padding: 0 0 16px 0;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .footer-subscribe-input {
@@ -855,9 +861,7 @@ form.modal-form {
 }
 
 .footer-subscribe-wrapper {
-    padding: 16px 0 0 0;
     display: flex;
-    gap: 24px;
 }
 
 .footer-subscribe-btn {
@@ -876,6 +880,7 @@ form.modal-form {
     cursor: pointer;
     position: relative;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 24px;
 }
 
 .footer-subscribe-btn:hover {
@@ -898,12 +903,12 @@ form.modal-form {
 .modal-form-privacy-policy {
     font-weight: 400;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.33;
     color: #757575;
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    padding: 0 0 24px 0;
+    margin: 16px 0 24px 0;
 }
 
 .modal-form-privacy-policy-link {
@@ -992,6 +997,7 @@ svg.modal-icon-svg {
     background-position: center;
     background-size: contain;
     opacity: 1;
+    border-color: #404BBF;
 }
 
 .icon-modal {
@@ -1006,4 +1012,9 @@ svg.modal-icon-svg {
 .modal-form-privacy-policy-label {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.modal-form-wrap {
+    margin: 0 0 8px 0;
 }

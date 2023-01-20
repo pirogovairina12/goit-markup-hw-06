@@ -409,13 +409,13 @@
             </svg>
         </button>
         <div class="modal-container ">
-            <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <div class="modal-form-wrap">
-                    <label class="modal-form-label">Name </label>
+                    <label class="modal-form-label" for="modal-name">Name </label>
                     <input type="name" name="name"
                            placeholder=""
-                           required="" class="modal-form-input">
+                           required="" class="modal-form-input" id="modal-name">
                     <div class="modal-icon-svg-wrap">
                         <svg class="modal-icon-svg" width="18px" height="24px">
                             <use class="modal-icon-use" href="./images/modal-icon.svg#icon-person-black"></use>
@@ -423,10 +423,10 @@
                     </div>
                 </div>
                 <div class="modal-form-wrap">
-                    <label class="modal-form-label">Phone</label>
+                    <label class="modal-form-label" for="modal-tel">Phone</label>
                     <input type="tel" name="tel"
                            placeholder="" required=""
-                           class="modal-form-input">
+                           class="modal-form-input" id="modal-tel" >
                     <div class="modal-icon-svg-wrap">
                         <svg class="modal-icon-svg" width="18px" height="24px">
                             <use class="modal-icon-use" href="./images/modal-icon.svg#icon-phone-black"></use>
@@ -434,10 +434,10 @@
                     </div>
                 </div>
                 <div class="modal-form-wrap">
-                    <label class="modal-form-label">Email</label>
+                    <label class="modal-form-label" for="modal-email">Email</label>
                     <input type="email" name="email"
                            placeholder=""
-                           required="" class="modal-form-input">
+                           required="" class="modal-form-input" id="modal-email">
                     <div class="modal-icon-svg-wrap">
                         <svg class="modal-icon-svg" width="18px" height="24px">
                             <use class="modal-icon-use" href="./images/modal-icon.svg#icon-email-black"></use>
@@ -445,8 +445,8 @@
                     </div>
                 </div>
                 <div class="modal-form-wrap">
-                    <label class="modal-form-label" >Comment</label>
-                    <textarea class="modal-form-textarea" placeholder="Text input" name="user-message"></textarea>
+                    <label class="modal-form-label" for="modal-textarea">Comment</label>
+                    <textarea class="modal-form-textarea" id="modal-textarea" placeholder="Text input" name="user-message"></textarea>
                 </div>
                 <div class="modal-form-bottom">
                     <div class="modal-form-privacy-policy">
@@ -454,8 +454,9 @@
                         <label name="user-policy" value="" class="modal-form-privacy-policy-label">
                             <input type="checkbox" name="user-policy" class="modal-form-checkbox">
                             <span class="icon-modal"></span>
-                            I accept the terms and conditions of the   <a href="" class="modal-form-privacy-policy-link"> Privacy
-                            Policy</a>
+                            <span>I accept the terms and conditions of the &nbsp;
+                            <a href="" class="modal-form-privacy-policy-link"> Privacy
+                                Policy</a></span>
                         </label>
                     </div>
                     <button
